@@ -34,7 +34,7 @@ var cronometro = setInterval(() => {
         //Ajuste de intervalo na criação de mosquito
         clearInterval(cronometro);
         clearInterval(criaMosquito);
-        window.location.href = '../vitoria.html'
+        window.location.href = 'vitoria.html'
     } else {
        document.getElementById('cronometro').innerHTML = tempo;
     }
@@ -49,9 +49,9 @@ function posicaoRandom() {
         document.getElementById('mosquito').remove();
 
         if (vidas > 3) {
-            window.location.href = '../Game_Over.html';
+            window.location.href = 'Game_Over.html';
         } else {
-            document.getElementById('v' + vidas).src = '../imagens/coracao_vazio.png';
+            document.getElementById('v' + vidas).src = 'imagens/coracao_vazio.png';
             vidas++;
         }
     }
@@ -69,7 +69,7 @@ function posicaoRandom() {
     //Criar elemento img
     //Setando propriedades
     var mosquito_img = document.createElement('img');
-    mosquito_img.src = '../imagens/mosca.png';
+    mosquito_img.src = 'imagens/mosca.png';
     mosquito_img.className = tamanhoRandom() + " " + ladoRandom();
     mosquito_img.style.position = 'absolute';
     mosquito_img.style.top = posY + 'px';
